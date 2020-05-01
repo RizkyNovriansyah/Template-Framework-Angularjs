@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>
+            title
+        </title>
+    </head>
+    <body ng-controller="RootController">
+        <h1>Halo dari root</h1>
+        <div><a ng-click="movePage('home')">Home</a> | <a ng-click="movePage('detail')">Detail</a></div>
+        <div ui-view></div>
+
+        
+        <script src="packages/angular/angular.js"></script>
+        <script src="packages/angular/angular-ui-router.min.js"></script>
+
+        <script src="app.js"></script>
+        <script src="app/controllers/HomeController.js"></script>
+        <script src="app/controllers/DetailController.js"></script>
+
+    </body>
+</html>
